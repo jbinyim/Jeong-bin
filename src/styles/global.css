@@ -1,0 +1,141 @@
+@import "tailwindcss";
+@import "prismjs/themes/prism-tomorrow.css";
+@import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+
+@font-face {
+  font-family: "skt sans";
+  src: url("/fonts/SKTSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+pre {
+  background: #1e1e1e; /* 전체 박스 배경 */
+  padding: 1rem; /* 박스 안쪽 여백 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  overflow-x: auto; /* 코드가 길면 스크롤 */
+}
+
+/* 코드 글자 스타일 */
+code[class*="language-"] {
+  color: #d4d4d4; /* 글자색 */
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.token.comment {
+  color: #6a9955;
+} /* 주석 */
+.token.string {
+  color: #ce9178;
+} /* 문자열 */
+.token.keyword {
+  color: #569cd6;
+} /* 키워드 */
+.token.function {
+  color: #dcdcaa;
+} /* 함수 */
+
+/* Text Size */
+@utility text-10-normal {
+  font-size: 10px;
+  font-weight: normal;
+}
+@utility text-12-normal {
+  font-size: 12px;
+  font-weight: normal;
+}
+@utility text-13-bold {
+  font-size: 13px;
+  font-weight: 700;
+}
+@utility text-13-normal {
+  font-size: 13px;
+  font-weight: normal;
+}
+@utility text-14-normal {
+  font-size: 14px;
+  font-weight: normal;
+}
+@utility text-16-regular {
+  font-size: 16px;
+  font-weight: 300;
+}
+@utility text-16-normal {
+  font-size: 16px;
+  font-weight: normal;
+}
+@utility text-16-bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+@utility text-20-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+@utility text-22-bold {
+  font-size: 22px;
+  font-weight: 700;
+}
+@utility text-24-normal {
+  font-size: 24px;
+  font-weight: normal;
+}
+@utility text-25-bold {
+  font-size: 25px;
+  font-weight: 700;
+}
+@utility text-30-bold {
+  font-size: 30px;
+  font-weight: 700;
+}
+@utility text-36-bold {
+  font-size: 36px;
+  font-weight: 700;
+}
+@utility text-56-bold {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+/* 카드 애니메이션 */
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* 탭 css */
+.custom-tabs .nav-link.active {
+  background-color: #4a508f !important;
+  color: white !important;
+  border-radius: 0.375rem;
+}
+
+.custom-tabs .nav-link:hover {
+  background-color: #e9ecef;
+  color: #4a508f !important;
+}
+
+.custom-tabs.nav-tabs .nav-link {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 0.375rem;
+}
+
+/* Background Img */
+@utility project-img {
+  background: url("https://jbinyim12.cafe24.com/projectImg.jpg") center/cover
+    no-repeat;
+}
+
+@utility skill-img {
+  background: url("https://jbinyim12.cafe24.com/skillimg.jpg") center no-repeat;
+}
+
+body {
+  font-family: "skt sans", sans-serif;
+}

@@ -1,0 +1,45 @@
+.blog-post {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3 {
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+.blog-post h1 {
+  font-size: 40px;
+}
+
+.blog-post ul {
+  list-style: disc;
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.blog-post ol {
+  list-style: decimal;
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.blog-post blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  margin: 1.5rem 0;
+}
+
+.blog-post table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.blog-post table th,
+.blog-post table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+}
