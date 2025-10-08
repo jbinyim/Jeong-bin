@@ -5,7 +5,7 @@ export default function ProjectBox() {
   return (
     <>
       {/* lg size */}
-      <Link to="/project">
+      <Link to="/Project">
         <div className="hidden lg:block h-100 bg-[#e0e0e0] rounded-2xl cursor-pointer relative overflow-hidden group">
           <img
             src="https://jbinyim12.cafe24.com/projectImg.jpg"

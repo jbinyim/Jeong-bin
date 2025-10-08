@@ -11,10 +11,10 @@ const Header = ({ siteTitle }) => (
         <li className="hover:underline">
           <Link to="/Introduce">소개</Link>
         </li>
-        <li>
+        <li className="hover:underline">
           <Link to="/Blog">블로그</Link>
         </li>
-        <li>
+        <li className="hover:underline">
           <Link to="/Project">프로젝트</Link>
         </li>
       </ul>

@@ -28,11 +28,15 @@ export default function IntroduceBox() {
   }, [])
 
   const handleMouseEnter = () => {
-    introTimeline.current.restart()
+    if (introTimeline.current) {
+      introTimeline.current.restart()
+    }
   }
 
   const handleMouseLeave = () => {
-    introTimeline.current.pause(0)
+    if (introTimeline.current) {
+      introTimeline.current.pause(0)
+    }
   }
 
   return (

@@ -5,6 +5,7 @@ import IntroduceBox from "./IntroduceBox"
 import EducationBox from "./EducationBox"
 import GithubBox from "./GithubBox"
 import HomeTitle from "./HomeTitle"
+import Mystory from "./Mystory"
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -46,8 +47,7 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-screen bg-white relative z-10">
-        {/* <Mystory />
-        <MyProject /> */}
+        <Mystory />
       </section>
     </div>
   )

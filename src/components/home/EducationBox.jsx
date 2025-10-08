@@ -19,10 +19,15 @@ export default function EducationBox() {
   }, [])
 
   const handleMouseEnter = () => {
-    educationAnimation.current.restart()
+    if (educationAnimation.current) {
+      educationAnimation.current.restart()
+    }
   }
+
   const handleMouseLeave = () => {
-    educationAnimation.current.pause(0)
+    if (educationAnimation.current) {
+      educationAnimation.current.reverse()
+    }
   }
 
   return (

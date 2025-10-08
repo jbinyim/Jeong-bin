@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export default function SkillBox() {
   return (
-    <Link to="/skill">
+    <Link to="/Skill">
       <div className="hidden h-85 rounded-2xl text-white lg:flex flex-col justify-between cursor-pointer relative overflow-hidden group">
         <img
           src="https://jbinyim12.cafe24.com/skillimg.jpg"
