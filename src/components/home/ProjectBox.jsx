@@ -26,7 +26,7 @@ export default function ProjectBox() {
       {/* sm size */}
       <div className="lg:hidden order-2 w-full h-46.5 flex justify-between gap-4">
         <Link
-          to="/project"
+          to="/Project"
           className="block w-full h-hull project-img rounded-2xl p-4 text-white cursor-pointer"
         >
           <p className="text-16-bold mb-3">프로젝트</p>
@@ -37,7 +37,7 @@ export default function ProjectBox() {
           </p>
         </Link>
         <Link
-          to="/skill"
+          to="/Skill"
           className="w-full skill-img rounded-2xl p-4 text-white"
         >
           <p className="text-16-bold mb-3">기술</p>

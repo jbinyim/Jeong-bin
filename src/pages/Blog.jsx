@@ -9,11 +9,22 @@ export default function Blog({ data }) {
   console.log(posts)
   return (
     <Layout>
-      {posts?.map(post => (
-        <div>
-          <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+      <main className="max-w-200 mx-auto py-8 px-2">
+        <p className="text-center text-20-bold mb-4">({posts.length}) Blogs</p>
+        <div className="flex flex-col gap-4">
+          {posts?.map(post => (
+            <Link key={post.fields.slug} to={post.fields.slug}>
+              <figure className="p-1 hover:bg-[#f7f8fa] rounded-sm flex flex-col gap-2">
+                <p className="text-18-bold">{post.frontmatter.title}</p>
+                <p className="text-13-normal text-[#8a8a8a]">{post.excerpt}</p>
+                <p className="text-13-normal text-[#b5b6ba]">
+                  {post.frontmatter.date}
+                </p>
+              </figure>
+            </Link>
+          ))}
         </div>
-      ))}
+      </main>
     </Layout>
   )
 }
@@ -26,7 +37,9 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
+          category
         }
+        excerpt(pruneLength: 240)
         fields {
           slug
         }

@@ -35,7 +35,7 @@ export default function Home() {
             }}
           />
           <div className="relative flex flex-col gap-10 lg:gap-30 items-center pt-25 px-4 lg:pt-40 lg:px-0">
-            <HomeTitle />
+            <HomeTitle text="Introduce Myself" isHome={true} />
             <div className="w-full lg:w-269.5 grid grid-rows-1 lg:grid-cols-5 gap-2.5 lg:items-center lg:justify-center">
               <SkillBox />
               <ProjectBox />

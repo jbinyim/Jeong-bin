@@ -6,11 +6,12 @@ export default function BlogPost({ data }) {
   const blog = data?.markdownRemark
   return (
     <Layout>
-      <h1>{blog?.frontmatter.title}</h1>
-      <div
-        className="blog-post"
-        dangerouslySetInnerHTML={{ __html: blog?.html }}
-      />
+      <main className="max-w-200 mx-auto pb-4 px-4">
+        <div
+          className="blog-post"
+          dangerouslySetInnerHTML={{ __html: blog?.html }}
+        />
+      </main>
     </Layout>
   )
 }

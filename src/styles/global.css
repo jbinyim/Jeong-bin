@@ -68,6 +68,10 @@ code[class*="language-"] {
   font-size: 16px;
   font-weight: 700;
 }
+@utility text-18-bold {
+  font-size: 18px;
+  font-weight: 700;
+}
 @utility text-20-bold {
   font-size: 20px;
   font-weight: 700;

@@ -46,7 +46,7 @@ export default function Mystory() {
           </figure>
         ))}
       </article>
-      <SeeMoreButton text="나의 소개 바로가기" link={"introduce"} />
+      <SeeMoreButton text="나의 소개 바로가기" link={"Introduce"} />
     </main>
   )
 }

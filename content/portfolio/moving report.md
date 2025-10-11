@@ -1,16 +1,18 @@
 ---
 title: "Moving - 무빙"
+date: "2025-08-18"
 oneLine: "무빙프로젝트"
-tech: ["Next.js", "TypeScript", "Node.js", "Prisma", "PostgreSQL"]
-link: "https://fcinfo.kr"
-thumbnail: "./fcinfo.png"
+tech: ["Next.js", "TypeScript", "TailwindCSS", "Node.js", "Prisma"]
+link: "https://moving-web.site/ko"
+thumbnail: "https://yim-kappa.vercel.app/moving/moving-home.png"
 ---
 
-# 무빙 개인 개발 리포트 - 임정빈
+# 무빙 개인 개발 리포트(7인) - 임정빈
 
 사이트 주소: https://moving-web.site/ko
 
-깃허브 주소: https://github.com/jbinyim/6th-Moving-4Team-FE, https://github.com/jbinyim/6th-Moving-4Team-BE
+깃허브 주소: https://github.com/jbinyim/6th-Moving-4Team-FE, <br/>
+https://github.com/jbinyim/6th-Moving-4Team-BE
 
 ## 1. 프로젝트 개요
 

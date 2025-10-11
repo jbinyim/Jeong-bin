@@ -4,7 +4,7 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import SplitType from "split-type"
 
-export default function HomeTitle() {
+export default function HomeTitle({ text, isHome }) {
   const textRef = useRef(null)
 
   useGSAP(
@@ -34,9 +34,11 @@ export default function HomeTitle() {
   return (
     <p
       ref={textRef}
-      className="text-custom-black text-3xl lg:text-5xl font-bold"
+      className={`text-custom-black text-24-normal text-center ${
+        isHome && "text-3xl lg:text-5xl"
+      }  font-bold`}
     >
-      Introduce Myself
+      {text}
     </p>
   )
 }

@@ -1,14 +1,15 @@
 ---
 title: "FC Info"
+date: "2025-09-03"
 oneLine: "fc온라인 프로젝트"
-tech: ["Next.js", "TypeScript", "Node.js", "Prisma", "PostgreSQL"]
+tech: ["Next.js", "TypeScript", "TailwindCSS", "Node.js"]
 link: "https://fcinfo.kr"
-thumbnail: "./fcinfo.png"
+thumbnail: "https://yim-kappa.vercel.app/fc/fc-home.png"
 ---
 
-# FC Info 개인 개발 리포트 - 임정빈
+# FC Info 개인 개발 리포트(2인) - 임정빈
 
-배포 주소: https://www.fcinfo.kr/
+배포 주소: https://www.fcinfo.kr
 
 깃허브 주소: https://github.com/jbinyim/fconline-record-next
 
