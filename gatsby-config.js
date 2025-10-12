@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Jeong-bin`,
+    description: `개발자 임정빈 포트폴리오`,
+    author: `임정빈`,
+    siteUrl: `https://jeong-bin.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

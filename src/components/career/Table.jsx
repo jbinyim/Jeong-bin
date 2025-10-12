@@ -10,8 +10,11 @@ export default function Table({ title, type }) {
             <p key={_idx}>{n}</p>
           ))}
         </li>
-        {type.rows.map(row => (
-          <li className="grid grid-cols-3 text-14-normal py-4 px-2 border-b-2 border-gray-200">
+        {type.rows.map((row, _idx) => (
+          <li
+            key={_idx}
+            className="grid grid-cols-3 text-14-normal py-4 px-2 border-b-2 border-gray-200"
+          >
             {row.map((d, _idx) => (
               <p key={_idx} className="px-2">
                 {d}
