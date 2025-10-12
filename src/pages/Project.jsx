@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import { graphql, Link } from "gatsby"
+import Seo from "../components/layout/seo"
 
 export default function Project({ data }) {
   const projects = data?.allMarkdownRemark.nodes
@@ -83,3 +84,5 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => <Seo title="프로젝트" />

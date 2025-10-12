@@ -2,6 +2,7 @@ import * as React from "react"
 import { skillImg } from "../utils/skillImg"
 import SkillCard from "../components/skill/SkillCard"
 import Layout from "../components/layout/layout"
+import Seo from "../components/layout/seo"
 
 export default function Skill() {
   return (
@@ -47,3 +48,5 @@ export default function Skill() {
     </Layout>
   )
 }
+
+export const Head = () => <Seo title="기술" />

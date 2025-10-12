@@ -4,6 +4,8 @@ date: "2024-07-12"
 category: ""
 ---
 
+# style-components 기본 설정
+
 먼저 style-components의 타입정의 설치하고 가야한다.
 
 ```cmd

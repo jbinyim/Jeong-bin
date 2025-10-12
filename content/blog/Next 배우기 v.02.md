@@ -4,6 +4,8 @@ date: "2024-09-26"
 category: "next"
 ---
 
+# Next 배우기 v.02
+
 ### 1. fetch
 
 ![](https://velog.velcdn.com/images/jbinyim12/post/20511e20-817a-453d-9ce1-0b5ba1056b56/image.png)

@@ -6,7 +6,6 @@ import Seo from "../components/layout/seo"
 export default function Blog({ data }) {
   const posts = data?.allMarkdownRemark.nodes
 
-  console.log(posts)
   return (
     <Layout>
       <main className="max-w-200 mx-auto py-8 px-2">
@@ -48,4 +47,4 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <Seo title="임정빈" description="Blog" />
+export const Head = () => <Seo title="블로그" description="Blog" />

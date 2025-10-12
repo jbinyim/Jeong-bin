@@ -4,6 +4,8 @@ date: "2024-09-24"
 category: "next"
 ---
 
+# Next 배우기 v.01
+
 #### 1. next / react / react-dom 설치
 
 ```cmd
