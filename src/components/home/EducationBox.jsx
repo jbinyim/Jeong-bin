@@ -57,7 +57,7 @@ export default function EducationBox() {
       {/* sm size */}
       <div className="lg:hidden w-full h-46.5 bg-[#e0e0e0] rounded-2xl flex justify-between">
         <div className="p-6 cursor-pointer">
-          <p className="text-20-bold mb-3">교육</p>
+          <p className="text-20-bold mb-3">블로그</p>
           <p className="text-13-normal">
             나만의 기술 학습, 프로젝트 경험, 문제 해결 노하우를 정리하고
             공유하는 공간.
