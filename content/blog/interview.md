@@ -1,6 +1,6 @@
 ---
 title: "25.10.17 면접 회고"
-date: "2024-10-17"
+date: "2025-10-17"
 category: "interview"
 ---
 
