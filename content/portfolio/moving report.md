@@ -14,6 +14,8 @@ thumbnail: "https://yim-kappa.vercel.app/moving/moving-home.png"
 깃허브 주소: https://github.com/jbinyim/6th-Moving-4Team-FE, <br/>
 https://github.com/jbinyim/6th-Moving-4Team-BE
 
+![](https://velog.velcdn.com/images/jbinyim12/post/a1fdb172-85d7-4814-9aee-30fb212c6329/image.png)
+
 ## 1. 프로젝트 개요
 
 Moving은 사용자가 손쉽게 여러 이사업체의 견적을 비교하고, 자신에게 가장 적합한 전문가를 선택할 수 있도록 돕는 스마트 이사 비교 플랫폼입니다.

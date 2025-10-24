@@ -13,6 +13,8 @@ thumbnail: "https://yim-kappa.vercel.app/fc/fc-home.png"
 
 깃허브 주소: https://github.com/jbinyim/fconline-record-next
 
+![](https://velog.velcdn.com/images/jbinyim12/post/b4f10af9-8060-4180-a4c7-753cdd4afaec/image.png)
+
 ## 1. 프로젝트 개요
 
 FC 온라인 전적검색 사이트는 EA SPORTS FC 온라인 이용자들의 경기 데이터를 쉽고 빠르게 조회할 수 있도록 만든 웹 서비스입니다.
