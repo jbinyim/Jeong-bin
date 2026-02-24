@@ -25,9 +25,9 @@ export default function Skill() {
               </div>
             </li>
             <li className="text-20-bold lg:text-25-bold">
-              <p>Deployment</p>
+              <p>Infra</p>
               <div className="flex flex-wrap items-center gap-4 mt-4">
-                {skillImg.deployment.map((icon, _idx) => (
+                {skillImg.infra.map((icon, _idx) => (
                   <SkillCard key={_idx} text={icon.name} img={icon.img} />
                 ))}
               </div>
@@ -46,4 +46,3 @@ export default function Skill() {
     </Layout>
   )
 }
-
