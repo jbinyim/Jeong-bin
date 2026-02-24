@@ -20,7 +20,20 @@ export default function Introduce() {
   }
   const career = {
     name: ["기관 명", "담당 업무", "기간"],
-    rows: [["한국맥도날드(유한회사)", "제조", "21.01 ~ 22.03"]],
+    rows: [
+      ["주식회사 인톡", "풀스택 개발", "25.10 ~ 현재"],
+      ["한국맥도날드(유한회사)", "제조", "21.01 ~ 22.03"],
+    ],
+  }
+  const award = {
+    name: ["기관 명", "담당 업무", "기간"],
+    rows: [
+      [
+        "제 4회 블레이버스 MVP 개발 해커톤 - 대상",
+        "프론트엔드",
+        "26.02.01 ~ 26.02.12",
+      ],
+    ],
   }
   const school = {
     name: ["출신 학교", "학과", "기간"],
@@ -40,7 +53,7 @@ export default function Introduce() {
 
   return (
     <Layout>
-      <main className="max-w-200 mx-auto pt-10 px-4">
+      <main className="max-w-220 mx-auto pt-10 px-4">
         <HomeTitle
           isHome={false}
           text={
@@ -69,9 +82,10 @@ export default function Introduce() {
 
         <section className="mx-auto py-16  lg:px-0">
           <main className="py-10 flex flex-col gap-15">
+            <Table title="경력 사항" type={career} />
+            <Table title="수상 사항" type={award} />
             <Table title="교육 이수" type={edu} />
             <Table title="자격 사항" type={qualifications} />
-            <Table title="경력 사항" type={career} />
             <Table title="학력 사항" type={school} />
           </main>
         </section>
@@ -79,4 +93,3 @@ export default function Introduce() {
     </Layout>
   )
 }
-

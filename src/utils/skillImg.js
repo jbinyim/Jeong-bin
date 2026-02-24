@@ -50,13 +50,12 @@ export const skillImg = {
     { name: "PostgreSQL", img: "https://jbinyim12.cafe24.com/img/postsql.png" },
     { name: "Prisma", img: "https://jbinyim12.cafe24.com/img/prisma.png" },
     { name: "JWT", img: "https://jbinyim12.cafe24.com/img/jwt.png" },
-    { name: "Docker", img: "https://jbinyim12.cafe24.com/img/docker.png" },
     {
       name: "MongoDB",
       img: "https://jbinyim12.cafe24.com/web/upload/captcha/mongodb-logo.png",
     },
   ],
-  deployment: [
+  infra: [
     {
       name: "Vercel",
       img: "https://cdn.iconscout.com/icon/free/png-256/free-vercel-icon-svg-png-download-10673436.png?f=webp",
@@ -72,6 +71,7 @@ export const skillImg = {
       name: "Route 53",
       img: "https://jbinyim12.cafe24.com/img/route%2053.png",
     },
+    { name: "Docker", img: "https://jbinyim12.cafe24.com/img/docker.png" },
     {
       name: "Github Actions",
       img: "https://jbinyim12.cafe24.com/img/github-actions.png",
@@ -95,4 +95,4 @@ export const skillImg = {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/1024px-Notion-logo.svg.png",
     },
   ],
-};
+}
