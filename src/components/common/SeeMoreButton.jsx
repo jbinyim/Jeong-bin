@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link } from "react-router-dom"
 import * as React from "react"
 
 export default function SeeMoreButton({ text, link }) {

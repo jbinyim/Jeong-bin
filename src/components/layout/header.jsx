@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-router-dom"
 
 const Header = ({ siteTitle }) => (
   <header className="fixed top-0 left-0 z-30 w-full h-18.5 flex items-center justify-center backdrop-blur-sm bg-white/30 px-4 lg:px-0 border-b-2 border-gray-100">

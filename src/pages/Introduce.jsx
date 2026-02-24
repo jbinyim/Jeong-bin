@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout/layout.jsx"
 import Table from "../components/career/Table.jsx"
 import HomeTitle from "../components/home/HomeTitle.jsx"
-import Seo from "../components/layout/seo.jsx"
-
 export default function Introduce() {
   const edu = {
     name: ["과정", "기관", "기간"],
@@ -82,4 +80,3 @@ export default function Introduce() {
   )
 }
 
-export const Head = () => <Seo title="소개" />

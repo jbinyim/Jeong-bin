@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useMemo } from "react"
+import { Link } from "react-router-dom"
 import Layout from "../components/layout/layout"
-import { graphql, Link } from "gatsby"
-import Seo from "../components/layout/seo"
+import { parsePortfolioFiles } from "../utils/portfolio"
 
-export default function Project({ data }) {
-  const projects = data?.allMarkdownRemark.nodes
+export default function Project() {
+  const projects = useMemo(() => parsePortfolioFiles(), [])
 
   return (
     <Layout>
@@ -13,20 +13,17 @@ export default function Project({ data }) {
         <article className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 px-4">
           {projects.map(project => (
             <figure
-              key={project.fields.slug}
+              key={project.slug}
               className="h-85 rounded-4xl overflow-hidden shadow"
             >
               <img
-                src={
-                  project.frontmatter.thumbnail ||
-                  "https://placehold.co/600x400"
-                }
+                src={project.thumbnail || "https://placehold.co/600x400"}
                 alt="프로젝트 썸네일"
                 className="w-full md:w-100 h-52.5 object-top object-cover"
               />
               <div className="bg-[#f7f8fa] px-4 py-2 h-32.5">
                 <ul className="pb-1">
-                  {project.frontmatter.tech?.map((t, _idx) => (
+                  {project.tech?.map((t, _idx) => (
                     <li
                       key={_idx}
                       className="inline-block text-12-normal text-white bg-black px-1 py-0.5 rounded-sm mr-1"
@@ -35,22 +32,16 @@ export default function Project({ data }) {
                     </li>
                   ))}
                 </ul>
-                <span className="block text-16-bold">
-                  {project.frontmatter.title}
-                </span>
-                <span className="text-14-normal">
-                  {project.frontmatter.oneLine}
-                </span>
+                <span className="block text-16-bold">{project.title}</span>
+                <span className="text-14-normal">{project.oneLine}</span>
                 <div className="flex items-center justify-end gap-3">
                   <span className="text-12-normal hover:underline">
-                    <Link to={project.fields.slug} target="blank">
-                      See More
-                    </Link>
+                    <Link to={`/Project/${project.slug}`}>See More</Link>
                   </span>
                   <span className="text-12-normal hover:underline">
-                    <Link to={project.frontmatter.link} target="blank">
+                    <a href={project.link} target="_blank" rel="noreferrer">
                       Link
-                    </Link>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -61,28 +52,3 @@ export default function Project({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/portfolio/" } }
-      sort: { frontmatter: { date: DESC } }
-    ) {
-      nodes {
-        frontmatter {
-          title
-          date(formatString: "YYYY-MM-DD")
-          oneLine
-          tech
-          link
-          thumbnail
-        }
-        fields {
-          slug
-        }
-      }
-    }
-  }
-`
-
-export const Head = () => <Seo title="프로젝트" />
