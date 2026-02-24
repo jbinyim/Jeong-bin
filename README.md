@@ -1,99 +1,73 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# 임정빈 포트폴리오
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+[![Vercel Deploy](https://img.shields.io/badge/Vercel-배포중-black?logo=vercel)](https://jeong-bin.vercel.app)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+> 🔗 **배포 주소**: https://jeong-bin.vercel.app
 
-## 🚀 Quick start
+---
 
-1.  **Create a Gatsby site.**
+## 소개
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+프론트엔드 개발자 임정빈의 포트폴리오 사이트입니다.
+Velog 블로그 글을 실시간으로 연동하여 새 글 작성 시 자동으로 포트폴리오에 반영됩니다.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+---
 
-1.  **Start developing.**
+## 기술 스택
 
-    Navigate into your new site’s directory and start it up.
+| 분류 | 기술 |
+|------|------|
+| Frontend | Vite 6, React 18, React Router DOM v6 |
+| Style | Tailwind CSS 4 |
+| Animation | GSAP, Split Type |
+| Blog 연동 | Velog GraphQL API, react-markdown, react-syntax-highlighter |
+| Deploy | Vercel (Serverless Function 포함) |
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+---
 
-1.  **Open the source code and start editing!**
+## 주요 기능
 
-    Your site is now running at `http://localhost:8000`!
+- **홈** — 소개·프로젝트·스킬·깃허브 카드, 마우스 패럴랙스 배경 애니메이션
+- **블로그** — Velog API 실시간 연동 (새 글 작성 시 자동 반영, 마크다운 렌더링)
+- **프로젝트** — 로컬 마크다운 파일로 프로젝트 상세 내용 렌더링
+- **소개** — 경력·교육·수상·자격 이력 테이블
+- **스킬** — 보유 기술 스택 카드
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+---
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## 프로젝트 구조
 
-## 🚀 Quick start (Netlify)
+```
+├── api/
+│   └── velog.js          # Vercel Serverless Function (Velog CORS 프록시)
+├── content/
+│   └── portfolio/        # 프로젝트 상세 마크다운 파일
+├── src/
+│   ├── components/       # 재사용 컴포넌트
+│   ├── pages/            # 라우트 단위 페이지
+│   ├── styles/           # 전역 CSS
+│   └── utils/
+│       └── portfolio.js  # 마크다운 파싱 유틸
+├── static/               # 폰트 등 정적 파일
+├── index.html
+├── vite.config.js
+└── vercel.json
+```
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+---
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## 로컬 실행
 
-## 🧐 What's inside?
+```bash
+npm install
+npm start     # → http://localhost:5173
+```
 
-A quick look at the top-level files and directories you'll see in a typical Gatsby project.
+---
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+## 배포
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-1.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-1.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
-
-1.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-1.  **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/getting-started/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On Netlify](https://netlify.com)
-
-The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+GitHub `master` 브랜치에 push 시 Vercel 자동 배포
