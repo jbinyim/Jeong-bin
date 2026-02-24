@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-router-dom"
 import gsap from "gsap"
 import { useEffect, useRef } from "react"
 

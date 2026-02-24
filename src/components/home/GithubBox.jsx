@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import gsap from "gsap"
 import { useEffect, useRef } from "react"
 import * as React from "react"
@@ -55,7 +54,7 @@ export default function GithubBox() {
   }
 
   return (
-    <Link to="https://github.com/jbinyim" target="_blank" className="order-4">
+    <a href="https://github.com/jbinyim" target="_blank" rel="noreferrer" className="order-4">
       <div
         role="button"
         tabIndex={0}
@@ -103,6 +102,6 @@ export default function GithubBox() {
           className="absolute bottom-0 right-0 w-8 h-8"
         />
       </div>
-    </Link>
+    </a>
   )
 }
