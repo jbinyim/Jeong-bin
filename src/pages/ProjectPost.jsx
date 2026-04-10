@@ -2,8 +2,10 @@ import React, { useMemo } from "react"
 import { useParams, Link } from "react-router-dom"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
+import rehypeRaw from "rehype-raw"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
+import Mermaid from "../components/Mermaid"
 import Layout from "../components/layout/layout"
 import { parsePortfolioFiles } from "../utils/portfolio"
 
@@ -29,9 +31,13 @@ export default function ProjectPost() {
           <div className="blog-post">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
               components={{
                 code({ node, inline, className, children, ...props }) {
                   const match = /language-(\w+)/.exec(className || "")
+                  if (!inline && match && match[1] === "mermaid") {
+                    return <Mermaid chart={String(children).replace(/\n$/, "")} />
+                  }
                   if (!inline) {
                     return (
                       <SyntaxHighlighter

@@ -38,6 +38,10 @@
   margin: 1.5rem 0;
 }
 
+.blog-post summary {
+  cursor: pointer;
+}
+
 .blog-post table th,
 .blog-post table td {
   border: 1px solid #ddd;
